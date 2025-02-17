@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Sigmar&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: relative;
+    
+}
+
+body::-webkit-scrollbar{
+    color: transparent;
+    background-color: transparent;
+    width: 0;
+}
+
+.faixa{
+    position: absolute;
+    top: 33.3%;
+    left: 0;
+    rotate: 4deg;
+    
+}
+
+.faixa img{
+    width: 100vw;
+}
+
+.faixa2{
+    position: absolute;
+    top: 71%;
+    left: 0;
+    rotate: -3deg;
+    
+}
+
+.faixa2 img{
+    width: 100vw;
+}
+
+
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #b3b3b3;
+    text-align: center;
+
+    height: 80px;
+    width: 100vw;
+}
+
+.logo img{
+    width: 80px;
+    filter: brightness(0);
+
+    transition: all .3s;
+}
+
+.logo img:hover{
+    opacity: 0.65;
+}
+
+.social_icon{
+    cursor: pointer;
+
+}
+
+.social_icon i:hover{
+    opacity: 0.65;
+}
+
+.social_icon i{
+    color: #000;
+    font-size: 1.5rem;
+
+    transition: all .3s;
+}
+
+/* APRENDIZADO1, 2 ,3 */
+
+h2{
+    position: relative;
+    color: #fff;
+    font-family: "Sigmar", serif;
+    letter-spacing: 4px;
+    cursor: pointer;
+
+    transition: all .4s
+}
+
+h2:hover{
+    transform: scale(1.02);
+}
+
+h2::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    background-image: linear-gradient(90deg, #fff, transparent);
+    width: 0;
+    height: 2px;
+
+    transition: all .4s;
+}
+
+h2:hover::after{
+    width: 100%;
+}
+
+.aprendizado1{
+    background-image: url('/img/bg1.png');
+    
+    background-color: rgba(0, 0, 0, 0.87);
+    background-blend-mode: multiply;
+}
+
+.aprendizado2{
+    background-image: url('/img/bg2.jpg');
+    
+    background-color: rgba(0, 0, 0, 0.87);
+    background-blend-mode: multiply;
+}
+
+
+
+.aprendizado3{
+    background-image: url('/img/bg3.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    
+}
+
+
+/* ----------------------------------- */
+
+.aprendizado1,
+.aprendizado2,
+.aprendizado3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 4rem 0;
+    width: 100vw;
+    
+}
+
+.container-artes1,
+.container-artes2,
+.container-artes3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 4rem;
+    gap: 4rem;
+    flex-wrap: wrap;
+    
+}
+
+.container-artes3 span img{
+    width: 308px;
+}
+
+
+.container-artes1 span,
+.container-artes2 span,
+.container-artes3 span{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 8px;
+    max-width: 28vw;
+    min-width: 380px;
+    height: 250px;
+    margin: 0 1rem;
+
+    cursor: pointer;
+    transition: all .4s;
+}
+
+.img-hover img{
+    width: 260px;
+    
+}
+
+.img-hover span:hover{
+    transform: scale(1.03);
+}
+
+
+/* FOOTER */
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    width: 100%;
+    height: 80px;
+    background-color: #000000;
+    margin-bottom: -200px;
+}
+
+footer span{
+    font-weight: bold;
+}
+
+
