@@ -126,12 +126,12 @@ h2:hover::after{
     background-blend-mode: multiply;
 }
 
-
-
 .aprendizado3{
     background-image: url('/img/bg3.png');
     background-repeat: no-repeat;
     background-size: cover;
+
+    background-color: rgba(0, 0, 0, 0.87);
     
     
 }
