@@ -6,14 +6,31 @@
     <!-- box icons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
-    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon/favicon1.ico" type="image/x-icon">
+
+    <script src="script.js" defer></script>
 
     <link rel="stylesheet" href="style/style.css">
-    <title>Portifolio</title>
+    <title>Portifólio | Designer Curti</title>
 </head>
 <body>
     
     <div class="home">
+
+        <div class="menu-burguer" onclick="menuCliquei()">
+            <i class='bx bx-menu'></i>
+        </div>
+
+        <div class="menu-mobile">
+            <div class="mobile-txt" onclick="remove()">
+                <li><a href="#page-media">Home</a></li>
+                <li><a href="#page-media">Media Social</a></li>
+                <li><a href="#page-logo">Logos</a></li>
+                <li><a href="#page-layout">Layout</a></li>
+                <li><a href="#page-sobre">Sobre</a></li>
+            </div>
+        </div>
+
         
         <nav>
             <li><a href="#page-media">Home</a></li>
@@ -37,6 +54,23 @@
             <a href="https://www.linkedin.com/in/gabriel-curti-b0262a314/#" target="_blank"><i class='bx bxl-linkedin-square' ></i></a>
         </div>
     </div>
+
+    <div class="aboutme" id="page-sobre">
+        <h2>Sobre Mim</h2>
+
+        <div class="aboutme-container">
+            <div class="aboutme-txt">
+                <p> E aí! Eu sou o Gabriel Curti Designer gráfico há 5 anos, viciado em transformar ideias em artes que chamam atenção! Se precisa de um logo marcante, um layout top ou posts que façam sua marca brilhar nas     redes, pode contar comigo. Sou daqueles que pega um café (ou dois) e mergulha de cabeça no projeto até ficar perfeito. Criatividade, dedicação e um toque de ousadia fazem parte do pacote!
+                Bora criar algo incrível juntos?
+                </p>
+            </div>
+            <div class="about">
+                <img src="img/about-img.png" alt="Eu">
+            </div>
+        </div>
+    </div>
+
+    <span class="line"></span> <!--LINHA PRA DIVISÃO -->
     
     <div class="aprendizado1" id="page-media">
 
@@ -110,21 +144,6 @@
             <span><img src="layouts/10.png" alt="layout10"></span>
             <span><img src="layouts/11.png" alt="layout11"></span>
             <span><img src="layouts/12.png" alt="layout12"></span>
-        </div>
-    </div>
-
-    <span class="line"></span> <!--LINHA PRA DIVISÃO -->
-
-    <div class="aboutme" id="page-sobre">
-        <h2>Sobre Mim</h2>
-
-        <div class="aboutme-container">
-            <div class="aboutme-txt">
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo ullam fuga adipisci quidem sunt facilis explicabo, assumenda aspernatur doloremque perferendis repudiandae, animi magni obcaecati saepe reprehenderit cum, ipsam repellendus, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem nihil tempora tempore sunt? Harum iure libero nisi! Corrupti recusandae deleniti harum quod in voluptatibus aut possimus dignissimos culpa. Quibusdam, numquam.</p>
-            </div>
-            <div class="about">
-                <img src="img/about-img.png" alt="Eu">
-            </div>
         </div>
     </div>
 

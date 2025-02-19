@@ -42,7 +42,7 @@ a, li{ list-style: none; text-decoration: none; font-size: .8rem; font-weight: 6
     justify-content: space-around;
     background-color: #ebebeb;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
-    padding: 4.5rem 0 1.2rem 0;
+    padding: 1.5rem 0;
     width: 100vw;
 }
 
@@ -91,16 +91,43 @@ a, li{ list-style: none; text-decoration: none; font-size: .8rem; font-weight: 6
     opacity: 0.65;
 }
 
+/* =========================================== ABOUTME */
+
+.aboutme-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6rem;
+    margin: 2rem 0;
+}
+
+.aboutme{
+    padding: 5rem;
+}
+
+.aboutme h2{
+    text-align: center;
+    margin-top: 4rem;
+}
+
+
+.aboutme .aboutme-txt{
+    max-width: 280px;
+}
+
+.aboutme .aboutme-txt p{
+    text-align: justify;
+}
+
+.aboutme img{
+    width: 360px;
+}
 
 /* =========================================== APRENDIZADO1, 2 ,3 */
 
 .aprendizado1{
     background-color:  #ebebeb;
 
-}
-
-.aprendizado1 h2{
-    margin-top: 6rem;
 }
 
 .aprendizado2{
@@ -178,36 +205,6 @@ h2{
     transform: scale(1.03);
 }
 
-/* =========================================== ABOUTME */
-
-.aboutme-container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 4rem;
-    margin-top: 2rem;
-}
-
-.aboutme{
-    padding: 4rem;
-}
-
-.aboutme h2{
-    text-align: center;
-}
-
-
-.aboutme .aboutme-txt{
-    max-width: 350px;
-}
-
-.aboutme .aboutme-txt p{
-    text-align: justify;
-}
-
-.aboutme img{
-    width: 450px;
-}
 
 /* =========================================== FOOTER */
 
@@ -225,4 +222,122 @@ footer span{
     font-weight: bold;
 }
 
+/* ======================================= MEDIA MOBILE MENU */
+
+.menu-burguer{
+    display: none;
+    font-size: 2rem;
+}
+
+.menu-mobile{
+    position: absolute;
+
+    display: none;
+    align-items: flex-start;
+    flex-direction: column;
+
+    background-color: #ebebeb;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px;
+    color: #353535;
+    height: 100vh;
+    width: 45%;
+    top: 100%;
+    left: 0;
+    
+    
+    transition: all .5s;
+    
+}
+
+
+.menu-mobile .mobile-txt li a{
+    font-size: 1rem;
+    margin-left: 2rem;
+
+}
+
+.mobile-txt{
+    width: 100%;
+}
+
+.menu-mobile .mobile-txt li a{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 5%;
+    width: 100%;
+    padding: 1rem 0;
+    cursor: pointer;
+    
+    
+}
+
+.menu-mobile .mobile-txt li:hover{
+    background-color: #dadada;
+    
+}
+
+
+@media screen and (max-width: 767px) {
+    .menu-burguer{
+        display: flex;
+    }
+
+    .open.menu-mobile{
+        display: flex;
+        
+    }
+
+    .home nav{
+        display: none;
+    }
+
+    .home .logo{
+        display: none;
+    }
+
+    .aboutme{
+        padding: 5rem;
+    }
+
+    .about{
+        margin-bottom: -4rem;
+    }
+    
+
+    .aboutme .aboutme-txt{
+        max-width: 300px;
+        font-size: 0.9rem;
+    }
+    
+    .aboutme img{
+        width: 250px;
+    }
+
+    .aboutme-container{
+        flex-direction: column-reverse;
+        margin-top: 4rem;
+    }
+
+    .aprendizado1,
+    .aprendizado2,
+    .aprendizado3{
+        overflow: hidden;
+        width: 100%;
+    }
+
+    .aprendizado1 .container-artes1,
+    .aprendizado2 .container-artes2,
+    .aprendizado3 .container-artes3{
+        display: flex;
+        flex-wrap: nowrap; 
+        overflow-x: auto; 
+        scroll-behavior: smooth;
+        white-space: nowrap;
+        padding: 4rem 0;
+        width: 100%;
+    }
+
+
+}
 
