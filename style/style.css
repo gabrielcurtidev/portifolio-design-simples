@@ -292,6 +292,10 @@ footer span{
         display: none;
     }
 
+    .social_icon p{
+        display: none;
+    }
+
     .logo img{
         width: 90px;
 
