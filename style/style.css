@@ -292,10 +292,10 @@ footer span{
         display: none;
     }
 
-    .home .logo{
-        display: none;
-    }
+    .logo img{
+        width: 90px;
 
+    }
     .aboutme{
         padding: 5rem;
     }
