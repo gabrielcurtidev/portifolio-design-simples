@@ -5,7 +5,12 @@ const btnEmail = document.querySelector('.btn-email')
 
 function menuCliquei(){
     menuMobile.classList.toggle('open')
-    document.body.style.overflow = "hidden";
+    
+    if(menuMobile.classList.contains('open')){
+        document.body.style.overflow = "hidden";
+    } else {
+        document.body.style.overflow = "";
+    }
     
 }
 
