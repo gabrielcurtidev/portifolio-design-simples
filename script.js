@@ -15,7 +15,9 @@ function remove(){
 }
 
 btnEmail.addEventListener('click', (copiarTexto) =>{
-    navigator.clipboard.writeText(btnEmail.value)
+    let email = 'gabrielcurti.dev@outlook.com' 
+
+    navigator.clipboard.writeText(email)
     .then(() => {
         let mensagem = document.getElementById("mensagem");
         mensagem.style.display = "block";
