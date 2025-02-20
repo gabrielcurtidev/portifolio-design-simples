@@ -64,21 +64,43 @@ a, li{ list-style: none; text-decoration: none; font-size: .8rem; font-weight: 6
 
 
 .social_icon{
+    position: relative;
     display: flex;
     align-items: center;
     cursor: pointer;
 
 }
 
-.social_icon p{
+.social_icon .btn-email{
     background-color: #353535;
     color: #ebebeb;
     font-weight: lighter;
     font-size: .8rem;
+    border: none;
 
     padding: 4px 10px;
     margin-right: 8px;
     margin-bottom: 2px;
+    cursor: pointer;
+}
+
+
+.social_icon .btn-email:hover{
+    opacity: 0.65;
+}
+
+.social_icon #mensagem{
+    position: absolute;
+    display: none;
+    left: 50px;
+    top: 30px;
+    background-color: #ebebeb;
+    border: 1px solid #353535;
+    padding: 4px 8px;
+    color: #353535;
+    border-radius: 4px;
+    font-size: .7rem;
+
 }
 
 .social_icon i{
