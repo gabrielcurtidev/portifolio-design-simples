@@ -295,7 +295,8 @@ footer span{
 }
 
 .menu-mobile .mobile-txt li:hover{
-    background-color: #dadada;
+    background-color: #e2e2e2;
+    border-radius: 0 25px 0 0;
     
 }
 
