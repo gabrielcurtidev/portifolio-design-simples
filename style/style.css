@@ -51,17 +51,22 @@ a, li{ list-style: none; text-decoration: none; font-size: .8rem; font-weight: 6
     transition: all .3s;
 }
 
-.home nav{
+.home .nav-menu{
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 1rem;
 }
 
-.home nav li:hover{
+
+.home .nav-menu li:hover{
     opacity: 0.65;
 }
 
+/* .nav-menu li.active{
+    border-bottom: 4px solid #353535;
+    width: 100%;
+} */
 
 .social_icon{
     position: relative;
@@ -311,7 +316,7 @@ footer span{
         
     }
 
-    .home nav{
+    .home .nav-menu{
         display: none;
     }
 

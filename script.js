@@ -2,6 +2,7 @@ const menuBurguer = document.querySelector('.menu-burguer')
 const menuMobile = document.querySelector('.menu-mobile')
 const mobileTxt = document.querySelectorAll(".mobile-txt")
 const btnEmail = document.querySelector('.btn-email')
+const navMenu = document.querySelectorAll('.nav-menu li')
 
 function menuCliquei(){
     menuMobile.classList.toggle('open')
@@ -34,3 +35,12 @@ btnEmail.addEventListener('click', (copiarTexto) =>{
 
     
 })
+
+// navMenu[0].classList.add('active')
+
+// navMenu.forEach(item => {
+//     item.addEventListener('click', function() {
+//         navMenu.forEach(li => li.classList.remove('active')); // Remove de todos
+//         this.classList.add('active'); // Adiciona no clicado
+//     });
+// });
