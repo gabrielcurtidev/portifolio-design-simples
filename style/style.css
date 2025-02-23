@@ -131,33 +131,13 @@ a, li{ list-style: none; text-decoration: none; font-size: .8rem; font-weight: 6
     background: linear-gradient(to right, rgba(226, 226, 226, 0) 0%, #e7e6e6 40%, #e7e6e6 60%, rgba(226, 226, 226, 0) 100%);
 }
 
-.logo-container::before,
-.logo-container::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 50px;
-  background: linear-gradient(to right, rgba(231, 230, 230, 1), rgba(231, 230, 230, 0));
-}
-
-.logo-container::before {
-    content: '';
-  left: 0;
-  background: linear-gradient(to right, rgba(231, 230, 230, 1), rgba(231, 230, 230, 0));
-}
-
-.logo-container::after {
-    content: '';
-  right: 0;
-  background: linear-gradient(to left, rgba(231, 230, 230, 1), rgba(231, 230, 230, 0));
-}
-
 .logo-track {
     display: flex;
-    gap: 30%;
+    align-items: center;
+    justify-content: center;
+    gap: 35%;
     width: max-content;
-    animation: marquee 10s linear infinite;
+    animation: marquee 7s linear infinite;
 }
 
 .logo-wrapper {
