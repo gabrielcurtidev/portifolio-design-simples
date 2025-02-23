@@ -118,6 +118,76 @@ a, li{ list-style: none; text-decoration: none; font-size: .8rem; font-weight: 6
     opacity: 0.65;
 }
 
+
+
+/* =========================== LOOP IMAGENS */
+
+.logo-container {
+    width: 100vw;
+    padding: 1rem 0;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    background: linear-gradient(to right, rgba(226, 226, 226, 0) 0%, #e7e6e6 40%, #e7e6e6 60%, rgba(226, 226, 226, 0) 100%);
+}
+
+.logo-container::before,
+.logo-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 50px;
+  background: linear-gradient(to right, rgba(231, 230, 230, 1), rgba(231, 230, 230, 0));
+}
+
+.logo-container::before {
+    content: '';
+  left: 0;
+  background: linear-gradient(to right, rgba(231, 230, 230, 1), rgba(231, 230, 230, 0));
+}
+
+.logo-container::after {
+    content: '';
+  right: 0;
+  background: linear-gradient(to left, rgba(231, 230, 230, 1), rgba(231, 230, 230, 0));
+}
+
+.logo-track {
+    display: flex;
+    gap: 30%;
+    width: max-content;
+    animation: marquee 10s linear infinite;
+}
+
+.logo-wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.logo-track img {
+    opacity: 0.05;
+    height: 50px;
+    flex: 1;
+    max-width: calc(100vw / 7);
+    object-fit: contain;
+}
+
+@keyframes marquee {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+
+
+
+
+
+
 /* =========================================== ABOUTME */
 
 .aboutme-container{
@@ -125,7 +195,7 @@ a, li{ list-style: none; text-decoration: none; font-size: .8rem; font-weight: 6
     align-items: center;
     justify-content: center;
     gap: 6rem;
-    margin: 2rem 0;
+    margin: 0;
 }
 
 .aboutme{
