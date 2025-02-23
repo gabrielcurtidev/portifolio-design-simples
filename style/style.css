@@ -175,7 +175,6 @@ a, li{ list-style: none; text-decoration: none; font-size: .8rem; font-weight: 6
     align-items: center;
     justify-content: center;
     gap: 6rem;
-    margin: 0;
 }
 
 .aboutme{
@@ -399,6 +398,14 @@ footer span{
     .aboutme-container{
         flex-direction: column-reverse;
         margin-top: 4rem;
+    }
+
+    .logo-track {
+        gap: 12%;
+    }
+
+    .logo-track img {
+        height: 40px;
     }
 
     .aprendizado1,
